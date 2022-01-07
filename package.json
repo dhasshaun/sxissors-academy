@@ -1,6 +1,10 @@
 {
   "name": "sxissors-academy",
   "description": "The site for Sxissors Academy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhasshaun/sxissors-academy.git"
+  },
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
