@@ -4,7 +4,7 @@ block content
 
   header.header
     a(href='#')
-      img.logo(alt='Sxissors Academy logo' src='img/logos/sxissors/png/Blacklogo-nobackground.png')
+      img.logo(alt='Sxissors Academy logo' src='img/logos/sxissors/png/Colorlogo-nobackground-compress.webp')
     nav.main-nav
       ul.main-nav-list
         li
@@ -228,20 +228,6 @@ block content
             p.plan-name คอร์สตัดผมชาย
             p.plan-price 18,000
             p.plan-price-promotion 15,000
-            // <p class="plan-text">per month. That's just $13 per meal!</p>
-          ul.list
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span เลือกเวลาเรียนได้
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span ไม่มีค่าใช้จ่ายเพิ่ม
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span
-                | ลด 
-                strong 3,000
-                |  บาท
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
         .pricing-plan.pricing-plan--starter
@@ -249,20 +235,6 @@ block content
             p.plan-name คอร์สดัด-ยืดผมชาย
             p.plan-price 15,000
             p.plan-price-promotion 10,000
-            // <p class="plan-text">per month. That's just $13 per meal!</p>
-          ul.list
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span เลือกเวลาเรียนได้
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span ไม่มีค่าใช้จ่ายเพิ่ม
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span
-                | ลด 
-                strong 5,000
-                |  บาท
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
         .pricing-plan.pricing-plan--starter
@@ -270,20 +242,6 @@ block content
             p.plan-name คอร์สทำสีผมแฟชั่น
             p.plan-price 15,000
             p.plan-price-promotion 10,000
-            // <p class="plan-text">per month. That's just $13 per meal!</p>
-          ul.list
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span เลือกเวลาเรียนได้
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span ไม่มีค่าใช้จ่ายเพิ่ม
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span
-                | ลด 
-                strong 5,000
-                |  บาท
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
         .pricing-plan.pricing-plan--complete
@@ -291,20 +249,6 @@ block content
             p.plan-name Full course
             p.plan-price 48,000
             p.plan-price-promotion 25,000
-            // <p class="plan-text">per month. That's just $11 per meal!</p>
-          ul.list
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span เลือกเวลาเรียนได้
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span ไม่มีค่าใช้จ่ายเพิ่ม
-            li.list-item
-              ion-icon.list-icon(name='checkmark-outline')
-              span
-                | ลด 
-                strong 20,000
-                |  บาท
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
       .container.grid
@@ -352,8 +296,8 @@ block content
               div
                 label(for='address') ที่อยู่
                 textarea#address(name='address',cols='30',rows='3',required)
-                label(for='select-course') คอร์ส
               div
+                label(for='select-course') คอร์ส
                 select#selectcourse(required)
                   option(value='') เลือกคอร์สที่ต้องการเรียน:
                   option(value='cutting') คอร์สตัดผมชาย
@@ -362,6 +306,7 @@ block content
                   option(value='full') Full course
               button.btn.btn--form(type="submit") ลงทะเบียน
           .cta-img-box(role='img' aria-label='Sxissors Academy barber chairs and mirrors')
+  
   footer.footer
     .container.grid.grid--footer
       .logo-col
