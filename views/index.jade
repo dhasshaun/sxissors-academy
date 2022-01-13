@@ -283,7 +283,7 @@ block content
             h2.heading-secondary ลงทะเบียนเรียน ตอนนี้เลย!
             p.cta-text
               | มาร่วมสร้างฝัน และเป็นครอบครัวเดียวกันที่ Sxissors Academy
-            form.cta-form(action='/users', method='post')
+            form.cta-form(action='/registration', method='post')
               div
                 label(for='full-name') ชื่อ - นามสกุล  
                 input#fullname(name='fullname', type='text',placeholder='John Smith',required)
@@ -297,8 +297,8 @@ block content
                 label(for='address') ที่อยู่
                 textarea#address(name='address',cols='30',rows='3',required)
               div
-                label(for='select-course') คอร์ส
-                select#selectcourse(required)
+                label(for='course') คอร์ส
+                select#course(name="course", required)
                   option(value='') เลือกคอร์สที่ต้องการเรียน:
                   option(value='cutting') คอร์สตัดผมชาย
                   option(value='perming') คอร์สดัด-ยืดผมชาย
