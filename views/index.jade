@@ -4,7 +4,7 @@ block content
 
   header.header
     a(href='#')
-      img.logo(alt='Sxissors Academy logo' src='img/logos/sxissors/png/Colorlogo-nobackground-compress.webp')
+      img.logo(alt='Sxissors Academy logo' src='img/logos/sxissors/png/Blacklogo-nobackground.png')
     nav.main-nav
       ul.main-nav-list
         li
@@ -275,7 +275,6 @@ block content
           p.feature-title มีมาตรฐานรองรับ
           p.feature-text
             | สถาบันสอนตัดผมชาย Sxissors ใช้หลักสูตรมาตรฐานจากกระทรวงศึกษาธิการ และยังได้เอาหลักสูตรสากลจาก WAHL Academy ประเทศอังกฤษเข้ามาปรับใช้อีกด้วย
-
     section#cta.section-cta
       .container
         .cta
@@ -283,7 +282,7 @@ block content
             h2.heading-secondary ลงทะเบียนเรียน ตอนนี้เลย!
             p.cta-text
               | มาร่วมสร้างฝัน และเป็นครอบครัวเดียวกันที่ Sxissors Academy
-            form.cta-form(action='/registration', method='post')
+            form.cta-form#cta-form
               div
                 label(for='full-name') ชื่อ - นามสกุล  
                 input#fullname(name='fullname', type='text',placeholder='John Smith',required)
@@ -306,7 +305,6 @@ block content
                   option(value='full') Full course
               button.btn.btn--form(type="submit") ลงทะเบียน
           .cta-img-box(role='img' aria-label='Sxissors Academy barber chairs and mirrors')
-  
   footer.footer
     .container.grid.grid--footer
       .logo-col

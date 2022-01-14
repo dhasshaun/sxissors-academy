@@ -38,10 +38,10 @@ export default class Register {
     const command = new PutItemCommand(item);
     const response = await this.docClient.send(command);
     console.log(JSON.stringify(response));
-    if (response.$metadata.httpStatusCode !== 200) {
-      res.status(500).redirect("/");
+    if (response.$metadata.httpStatusCode != 200) {
+      res.status(500).send("FAILED");
     } else {
-      res.status(200).redirect("/");
+      res.status(200).send("OK");
     }
   };
 }

@@ -92,6 +92,33 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
+$(document).ready(function () {
+	$("#cta-form").submit(function (e) {
+		e.preventDefault();
+		var form = $(this);
+		var formArr = form.serializeArray();
+		var formData = {
+			fullname: formArr[0].value,
+			email: formArr[1].value,
+			tel: formArr[2].value,
+			address: formArr[3].value,
+			course: formArr[4].value
+		};
+		$.ajax({
+			url: "/registration",
+			type: "post",
+			contentType: "application/json",
+			data: JSON.stringify(formData)
+		}).done(function (resp) {
+			document.getElementById("cta-form").reset();
+			alert("ลงทะเบียนเสร็จสิ้น โปรดรอเจ้าหน้าจะติดต่อกลับหาท่าน");
+		}).fail(function (err) {
+			// failed please try again
+			alert("ขอภัยพบข้อผิดพลาด โปรดลองอีกครั้ง");
+		});
+	});
+});
+
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
