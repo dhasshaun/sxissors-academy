@@ -134,11 +134,22 @@
   width: 100%;
 }
 
-.delivered-meals {
+.delivered-students {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.social-links {
+  gap: 1.6rem;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-img-logo {
+  height: 2.4rem;
 }
 
 .delivered-imgs {

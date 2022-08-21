@@ -4,7 +4,7 @@ block content
 
   header.header
     a(href='#')
-      img.logo(alt='Sxissors Academy logo' src='img/logos/sxissors/png/Blacklogo-nobackground.png')
+      img.logo(alt='โลโก้ สถาบันสอนตัดผมชายซิสเซอร์อะแคเดมี' src='img/logos/sxissors/png/Blacklogo-nobackground.png')
     nav.main-nav
       ul.main-nav-list
         li
@@ -27,15 +27,16 @@ block content
           p.hero-description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สถาบันสอนตัดผมชาย พร้อมแล้วที่จะสร้างช่างตัดผมรุ่นใหม่เข้าสู่วงการช่างตัดผมไทย เรามุ่งหวังและตั้งใจที่จะยกระดับวงการตัดผมเมืองไทยไปสู่ระดับโลก ด้วยประสบการณ์หลายสิบปีของเหล่าอาจารย์ Sxissors Masters และความตั้งใจจริงใจของทีมงานที่จะส่งมอบเทคนิคและความรู้ประสบการณ์อย่างหมดเปลือก ไม่มีกั๊ก
           a.btn.btn--full.margin-right-sm(href='#cta') สมัครเรียน
           a.btn.btn--outline(href='#courses') คอร์สที่เปิดสอน ↓
-          .delivered-meals
+          div.delivered-students
             p.delivered-text
               |เรามีนักเรียนที่เรียนจบแล้วกว่า
-              span 40 รุ่น
+              span &nbsp; 50 รุ่น
               |นับเป็นจำนวนกว่า 
-              span 500
+              span 500 &nbsp;
               |คน
               |นักเรียนของเราที่จบไปเปิดร้าน กว่า 100 สาขาทั่วประเทศไทย
               |และอีกกว่า 10 สาขาในประเทศเพื่อนบ้าน
+            
     section.section-who#whoarewe
       .container 
         span.subheading Get to know us 
@@ -226,34 +227,34 @@ block content
         .pricing-plan.pricing-plan--starter
           header.plan-header
             p.plan-name คอร์สตัดผมชาย
+            p.plan-price 20,000
+            p.plan-price-promotion 17,000
+          .plan-sing-up
+            a.btn.btn--full(href='#cta') ลงทะเบียน
+        .pricing-plan.pricing-plan--starter
+          header.plan-header
+            p.plan-name คอร์สดัด-ยืดผมชาย
             p.plan-price 18,000
             p.plan-price-promotion 15,000
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
         .pricing-plan.pricing-plan--starter
           header.plan-header
-            p.plan-name คอร์สดัด-ยืดผมชาย
-            p.plan-price 15,000
-            p.plan-price-promotion 10,000
-          .plan-sing-up
-            a.btn.btn--full(href='#cta') ลงทะเบียน
-        .pricing-plan.pricing-plan--starter
-          header.plan-header
             p.plan-name คอร์สทำสีผมแฟชั่น
-            p.plan-price 15,000
-            p.plan-price-promotion 10,000
+            p.plan-price 18,000
+            p.plan-price-promotion 15,000
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
         .pricing-plan.pricing-plan--complete
           header.plan-header
             p.plan-name Full course
-            p.plan-price 48,000
-            p.plan-price-promotion 25,000
+            p.plan-price 56,000
+            p.plan-price-promotion 27,000
           .plan-sing-up
             a.btn.btn--full(href='#cta') ลงทะเบียน
-      .container.grid
-        aside.plan-details
-          | ** โปรโมชั่นลดราคานี้ กำหนดวันสิ้นสุด ณ วันที่ 28 กุมภาพันธ์ 2565 **
+      //- .container.grid
+      //-   aside.plan-details
+      //-     | ** โปรโมชั่นลดราคานี้ กำหนดวันสิ้นสุด ณ วันที่ 28 กุมภาพันธ์ 2565 **
       .container.grid.grid--4-cols
         .feature
           ion-icon.feature-icon(name='infinite-outline')
@@ -269,7 +270,7 @@ block content
           ion-icon.feature-icon(name='diamond-outline')
           p.feature-title ประกอบอาชีพได้จริง
           p.feature-text
-            | ที่ Sxissors Academy มีนักเรียนจบแล้วมากกว่า 40 รุ่น รวม 400 กว่าคน นักเรียนของเราที่จบไปเปิดร้านกว่า 100 ร้านทั่วประเทศ และอีกกว่า 10 ร้านที่ประเทศเพื่อนบ้าน
+            | ที่ Sxissors Academy มีนักเรียนจบแล้วมากกว่า 50 รุ่น รวม 500 กว่าคน นักเรียนของเราที่จบไปเปิดร้านกว่า 100 ร้านทั่วประเทศ และอีกกว่า 10 ร้านที่ประเทศเพื่อนบ้าน
         .feature
           ion-icon.feature-icon(name='ribbon-outline')
           p.feature-title มีมาตรฐานรองรับ
@@ -285,13 +286,13 @@ block content
             form.cta-form#cta-form
               div
                 label(for='full-name') ชื่อ - นามสกุล  
-                input#fullname(name='fullname', type='text',placeholder='John Smith',required)
+                input#fullname(name='fullname', type='text',placeholder='ชื่อ นามสกุล',required)
               div
                 label(for='email') Email
-                input#email(name='email',type='email',placeholder='me@example.com',required)
+                input#email(name='email',type='email',placeholder='email address',required)
               div
                 label(for='tel') เบอร์โทรศัพท์
-                input#tel(name='tel',type='text',placeholder='0999999999', required)
+                input#tel(name='tel',type='text',placeholder='เบอร์โทรศัพท์', required)
               div
                 label(for='address') ที่อยู่
                 textarea#address(name='address',cols='30',rows='3',required)
@@ -309,7 +310,7 @@ block content
     .container.grid.grid--footer
       .logo-col
         a.footer-logo(href='#')
-          img.logo-footer(alt='Sxissros Academy logo' src='img/logos/sxissors/png/Colorlogo-nobackground-compress.webp')
+          img.logo-footer(alt='โลโก้ สถาบันสอนตัดผมชายซิสเซอร์อะแคเดมี' src='img/logos/sxissors/png/Colorlogo-nobackground-compress.webp')
         ul.social-links
           li
             a.footer-link(href='https://www.facebook.com/SxissorsAcademy')
@@ -319,7 +320,7 @@ block content
               ion-icon.social-icon(name='logo-instagram')
         p.copyright
           | Copyright © 
-          span.year 2027
+          span.year 2022
           |  by Sxissors Academy.
           |             All rights reserved.
       .address-col
@@ -348,4 +349,9 @@ block content
             a.footer-link(href='https://www.facebook.com/SxissorsAcademy') Help center
           li
             a.footer-link(href='#') Privacy & terms
+      nav.nav-col
+        p.footer-heading Line Official
+        ul.footer-nav
+          li
+            img.social-img-qr(src="./img/qr/M_gainfriends_qr.png")
 
