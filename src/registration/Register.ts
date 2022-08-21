@@ -71,9 +71,11 @@ export default class Register {
     axios(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
+      res.status(200).send("OK");
     })
     .catch(function (error) {
       console.log(error);
+      res.status(500).send("FAILED");
     });
   }
 
